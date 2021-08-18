@@ -10,16 +10,16 @@ body {
     background-color: hsl(0, 0%, 95%);
 }
 
+.wrap {
+    margin: 8% 23%;
+}
+
 .wrap-card-column {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
 }
 
 .card {
-    width: 300px;
+    width: 325px;
     max-width: 400px;
     min-width: 275px;
     color: hsla(0, 0%, 100%, 0.75);
@@ -78,4 +78,29 @@ body {
     background-color: hsl(179, 100%, 13%);
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .wrap {
+        margin: 20% 5%;
+    }
+    .wrap-card-column {
+        display: block;
+    }
+    .card {
+        width: auto;
+        padding: 15%;
+    }
+    .card p {
+        margin-bottom: 15%;
+    }
+    .sedans {
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+    .luxury {
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0;
+    }
 }
