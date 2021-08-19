@@ -81,7 +81,7 @@ body {
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 375px) {
     .wrap {
         margin: 20% 5%;
     }
